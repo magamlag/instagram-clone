@@ -2,7 +2,7 @@
   "name": "node-instagram",
   "version": "1.0.0",
   "description": "Web application that will print and mail a 4x4 Instagram photo",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "grunt nodeunit"
   },
@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/magamlag/instagram-clone/issues"
   },
-  "homepage": "https://github.com/magamlag/instagram-clone#readme"
+  "homepage": "https://github.com/magamlag/instagram-clone#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "instagram-node": "^0.5.8",
+    "jade": "^1.11.0",
+    "lob": "^3.9.0"
+  }
 }
