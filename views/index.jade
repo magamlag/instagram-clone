@@ -7,3 +7,38 @@ block content
                 h1 Photo Previewer
                     p Before you can mail a photo, need to authorize
                     a(href="/authorize-user" class="btn btn-primary") Login to Instagram
+    else
+        div.row
+            div.col-md-6
+                img(src=image, width="250px")
+                div
+                    br
+                    a.btn-default(href="/") Random Photo
+            div.col-md-6
+                h1 Mail Photo
+
+                form(action="/send-photo", method="post")
+                    div(class="form-group col-md-12")
+                        label Name
+                        input(type="text" class="form-control" name="name")
+                    div(class="form-group col-md-12")
+                        label Address
+                        input(type="text" class="form-control" name="address")
+
+                    div(class="form-group col-md-12")
+                        label City
+                        input(type="text" class="form-control" name="city")
+
+                    div(class="form-group col-md-12")
+                        label State
+                        input(type="text" class="form-control" name="state")
+
+                    div(class="form-group col-md-12")
+                        label Zip
+                        input(type="text" class="form-control" name="zip")
+
+                    div(class="form-group col-md-12")
+                        input(type="hidden", value=image, name="image")
+                        button(type="submit" class="btn btn-primary") Mail Photo
+
+

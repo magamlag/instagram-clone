@@ -1,0 +1,10 @@
+extends layout
+    div.row
+        div.col-md-12.text-center
+            if error
+                div.alert.alert-danger
+                    p= error
+            else
+                div.alert.alert-success
+                    p Success! Your photo has been sent!
+            a.btn.btn-primary(href="/") Send another photo
